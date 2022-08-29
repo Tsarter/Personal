@@ -10,13 +10,14 @@ var config = {
     particleNumber: 800,
     maxParticleSize: 10,
     maxSpeed: 40,
-    colorVariation: 50
+    colorVariation: 500
 };
 
 
-// Colors
+//DEFAULT Colors 
 var colorPalette = {
-    bg: { r: 12, g: 9, b: 29 },
+    //bg: { r: 12, g: 9, b: 29 }
+    bg: { r: 96, g: 92, b: 244 },
     matter: [
         { r: 36, g: 18, b: 42 }, // darkPRPL
         { r: 78, g: 36, b: 42 }, // rockDust
@@ -24,7 +25,15 @@ var colorPalette = {
         { r: 253, g: 238, b: 152 } // totesASun
     ]
 };
-
+/* var colorPalette = {
+    bg: { r: 96, g: 92, b: 244 },
+    matter: [
+        { r: 167, g: 167, b: 167 }, // darkPRPL
+        { r: 66, g: 62, b: 213 }, // rockDust
+        { r: 188, g: 225, b: 40 }, // solorFlare
+        { r: 0, g: 0, b: 0 } // totesASun
+    ]
+}; */
 
 // Some Variables hanging out
 var particles = [],
@@ -147,4 +156,4 @@ document.getElementById("splash_Btn").addEventListener("click", function(event) 
 frame();
 
 // First particle explosion
-initParticles(config.particleNumber);
+//initParticles(config.particleNumber);
